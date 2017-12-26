@@ -11,9 +11,9 @@
 		
 		<button>run</button>
 	</li>
-3. Replace your js code into <pre> html tag. 
-4. Click the run button below your added code. 
-5. Check the output at output div.
-6. Change the code directly via DOM and re-check the output.
+2. Replace your js code into <pre> html tag. 
+3. Click the run button below your added code. 
+4. Check the output at output div.
+5. Change the code directly via DOM and re-check the output.
 
 ## Happy coding
