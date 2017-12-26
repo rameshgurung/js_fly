@@ -3,11 +3,11 @@
 1. Simply add html block
 	```html
 	<li>
-	    string length
+	    WAP to check string length?
 	    
 	    <pre contenteditable="true">
-			var a = 'hello world';
-			a.length;
+		var a = 'hello world';
+		a.length;
 	    </pre>
 	    
 	    <button>run</button>
