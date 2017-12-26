@@ -8,9 +8,9 @@
 	    <pre contenteditable="true">
 			var a = 'hello world';
 			a.length;
-		</pre>
-		
-		<button>run</button>
+	    </pre>
+	    
+	    <button>run</button>
 	</li>
 	```
 2. Replace your js code into html pre tag. 
