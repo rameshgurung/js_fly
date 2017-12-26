@@ -1,0 +1,130 @@
+<html>	
+<head>	
+	<title>	JS fly - 101 logic </title>
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js'></script>
+</head>
+<body>
+    <div id="input">
+        <p>
+          Write a sample code in pure JS including the terms mentioned above (eg: Fibonacci series, palindrome, check sting length etc)  
+      </p>
+      <ol>	
+
+
+        <li>
+            Fibonacci series
+            <pre contenteditable="true">
+// '0, 1, 1, 2, 3, 5, 8';
+var fsa = [];
+var upto = 9;
+
+for(i=1; i<=upto; i++){
+    if(i == 1){
+        fsa.push(0);
+    }else if(i < 3){
+        fsa.push(1);
+    }else{
+        var n = fsa[i-2] + fsa[i-3];
+        fsa.push(n);
+    }
+}
+
+var fs = fsa.join(',');
+fs;
+</pre>
+<button>run</button>
+</li>
+
+<li>
+            palindrome
+            <pre contenteditable="true">
+var s = 'mom', a;
+var r = s.split('').reverse().join('');
+
+a = s + ' is not a palindrome';
+if(s == r){
+    a = s + ' is a palindrome';
+}
+a;
+</pre>
+<button>run</button>
+</li>
+
+<li>
+            string length
+            <pre contenteditable="true">
+var a = 'abtasty';
+a.length;
+</pre>
+<button>run</button>
+</li>
+
+
+</ol>
+</div>
+<div id="result">
+    Output
+    <hr>
+    <span id="output">
+
+    </span>
+</div>
+</body>
+
+<style>
+    body{
+        padding: 0;
+    }	
+    ol{
+        width:  70%;        
+    }
+    ol li{
+        margin-bottom: 2%;
+    }
+    pre{
+      background-color:#d3d1d1;
+      padding:1%;
+  }
+
+  div{
+     float: left;
+     padding:1%;
+ }
+ div#result{
+    position: fixed;
+    right: 0;
+    background-color:#d3d1d1;
+    width: 38%;
+    margin-top: 5%;
+    margin-right: 1%;
+}
+</style>
+
+<script>
+    try{
+
+        var output = $('#output');
+        if(output.length == 0) throw "no output element found";
+
+        var button = $('button');
+        button.click(function(){
+
+            var pre = $(this).parent('li:first').find('pre');
+
+            var code = pre[0].textContent;
+
+            var res = 'code : <br>' + code;
+            res += '<hr> ouput : <br>';
+            res =  eval(code);
+
+            console.log('code:\n', code, '\nres:\n', res);
+
+            output.html(res);
+
+        });
+    }catch(e){        
+        console.log(e);
+    }
+</script>
+
+</html>		
