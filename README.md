@@ -1,7 +1,7 @@
 # Run simple js code on DOM, no need to run in browser console
 
 1. Simply add html block
-	<li>
+	> <li>
 	    string length
 	    
 	    <pre contenteditable="true">
@@ -10,7 +10,7 @@
 		</pre>
 		
 		<button>run</button>
-	</li>
+	> </li>
 2. Replace your js code into <pre> html tag. 
 3. Click the run button below your added code. 
 4. Check the output at output div.
